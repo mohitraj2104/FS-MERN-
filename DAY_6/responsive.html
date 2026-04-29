@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            border: 1px solid black;
+            height: 5vh;
+            background-color: black;
+        }
+
+        .container {
+            border: 1px solid red;
+            display: flex;
+        }
+
+        .content {
+            border: 1px solid blue;
+            height: 90vh;
+            width: 75vw;
+            padding: 10px;
+        }
+
+        .leftNav {
+            border: 1px solid green;
+            height: 90dvh;
+            width: 30vw;
+        }
+
+        .footer {
+            border: 1px solid purple;
+            height: 5vh;
+        }
+
+        .navitems {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navItem {
+            margin: 10px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .LeftNavItem {
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .LeftNavItems {
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10vh;
+        }
+        .LeftNavItem{
+            border: 1px solid black;
+            width: 20vw;
+            border-radius: 10px;
+            padding-left: 2rem;
+        }
+        .LeftNavItem:hover{
+            background-color: black;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content >img{
+            width: 70%;
+            height: 70%;
+        }
+
+        @media (max-width: 600px){
+            .header{
+                height: 10vh;
+            }
+            .navitems{
+                flex-wrap: wrap;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .leftNav{
+                width: 100vw;
+            }
+            .LeftNavItem{
+                width: 70vw;
+                margin-top: 20px;
+                border-radius: 10px;
+                padding-left: 1rem;
+            }
+            .LeftNavItems{
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .content{
+                width: 99vw;
+            }
+            .content > img{
+                width: 50%;
+                height: 30%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- https://github.com/mohitraj2104 -->
+    <div class="header">
+        <ul class="navitems">
+            <li class="navItem">Home</li>
+            <li class="navItem">About</li>
+            <li class="navItem">Media</li>
+            <li class="navItem">Contact</li>
+            <li class="navItem">Login</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="leftNav">
+            <ul class="LeftNavItems">
+                <li class="LeftNavItem">Html</li>
+                <li class="LeftNavItem">Css</li>
+                <li class="LeftNavItem">Java Script</li>
+                <li class="LeftNavItem">React JS</li>
+                <li class="LeftNavItem">Reudx</li>
+                <li class="LeftNavItem">Node js</li>
+                <li class="LeftNavItem">MongoDB</li>
+                <li class="LeftNavItem">Express JS</li>
+            </ul>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci voluptatum 
+                dicta minima voluptates placeat ea, cumque sapiente esse minus quam! Illo voluptate 
+                nam recusandae quo suscipit obcaecati delectus quisquam, voluptas fugit at, ratione 
+                natus rem saepe asperiores quibusdam quos? Modi officiis architecto assumenda ex suscipit 
+                deserunt necessitatibus repellat quasi enim delectus, ad quibusdam explicabo, in fuga? Voluptas 
+                maiores, nesciunt animi aperiam magni soluta tenetur quod error eius illo, recusandae ducimus dicta 
+                minus? Esse delectus, a ratione eum sequi quibusdam commodi repellat reiciendis architecto cupiditate 
+                aliquid vero velit praesentium atque eligendi maxime mollitia. Fugiat autem molestiae esse ratione ex optio.</p>
+            <img src="./image.png" alt="image">
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+
+</html>
