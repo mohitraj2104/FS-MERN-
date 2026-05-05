@@ -20,10 +20,11 @@ let obj1={
     }
 }
 //spread operator or destructuring
-let copyObj1={...obj1};
+/*let copyObj1={...obj1};
 copyObj1.name="samsung",
 console.log(obj1)
 console.log(copyObj1)
 copyObj1.intro()
 copyObj1.detail.model=15;
 console.log(obj1)
+*/
